@@ -6,11 +6,11 @@
 <div class="container">
     <div class="row mb-4">
         <div class="col">
-            <h2>LISTA DE LSO GRUPOS.</h2>
+            <h2>LISTA DE LOS GRUPOS</h2>
         </div>
         <div class="col text-end">
             <a href="{{ route('grupos.create') }}" class="btn btn-primary">
-                <i class="bi bi-plus-circle"></i> NUEVO GRUPO.
+                <i class="bi bi-plus-circle"></i> NUEVO GRUPO
             </a>
         </div>
     </div>

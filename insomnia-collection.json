@@ -1,0 +1,238 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2025-01-20T00:00:00.000Z",
+  "__export_source": "insomnia.desktop.app:v2023.5.8",
+  "resources": [
+    {
+      "_id": "req_listar_grupos",
+      "parentId": "fld_grupos",
+      "modified": 1737331200000,
+      "created": 1737331200000,
+      "url": "{{ _.base_url }}/api/grupos",
+      "name": "Listar Grupos",
+      "description": "Obtener todos los grupos",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Accept",
+          "value": "application/json",
+          "id": "pair_accept"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1737331200000,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global"
+    },
+    {
+      "_id": "req_mostrar_grupo",
+      "parentId": "fld_grupos",
+      "modified": 1737331200000,
+      "created": 1737331200000,
+      "url": "{{ _.base_url }}/api/grupos/:id",
+      "name": "Mostrar Grupo",
+      "description": "Obtener un grupo específico por ID",
+      "method": "GET",
+      "body": {},
+      "parameters": [
+        {
+          "id": "pair_id",
+          "name": "id",
+          "value": "1",
+          "description": "ID del grupo"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Accept",
+          "value": "application/json",
+          "id": "pair_accept"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1737331199000,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global"
+    },
+    {
+      "_id": "req_crear_grupo",
+      "parentId": "fld_grupos",
+      "modified": 1737331200000,
+      "created": 1737331200000,
+      "url": "{{ _.base_url }}/api/grupos",
+      "name": "Crear Grupo (Registrar)",
+      "description": "Crear un nuevo grupo",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"periodo\": \"2025A\",\n  \"materia\": \"Matemáticas\",\n  \"rfc\": \"ABC123456789\",\n  \"alumno_escritos\": 20,\n  \"grupo\": \"A\",\n  \"estatus_grupo\": \"Activo\",\n  \"capacidad_grupo\": 30,\n  \"tipo_personal\": \"Profesor\",\n  \"folio_acta\": \"ACTA001\",\n  \"paralelo_de\": null,\n  \"exclusivo_carrera\": null,\n  \"exclusivo_reticula\": null\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_content_type"
+        },
+        {
+          "name": "Accept",
+          "value": "application/json",
+          "id": "pair_accept"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1737331198000,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global"
+    },
+    {
+      "_id": "req_actualizar_grupo",
+      "parentId": "fld_grupos",
+      "modified": 1737331200000,
+      "created": 1737331200000,
+      "url": "{{ _.base_url }}/api/grupos/:id",
+      "name": "Actualizar Grupo",
+      "description": "Actualizar un grupo existente",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"periodo\": \"2025A\",\n  \"materia\": \"Matemáticas Avanzadas\",\n  \"rfc\": \"ABC123456789\",\n  \"alumno_escritos\": 25,\n  \"grupo\": \"A\",\n  \"estatus_grupo\": \"Activo\",\n  \"capacidad_grupo\": 35\n}"
+      },
+      "parameters": [
+        {
+          "id": "pair_id",
+          "name": "id",
+          "value": "1",
+          "description": "ID del grupo a actualizar"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_content_type"
+        },
+        {
+          "name": "Accept",
+          "value": "application/json",
+          "id": "pair_accept"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1737331197000,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global"
+    },
+    {
+      "_id": "req_eliminar_grupo",
+      "parentId": "fld_grupos",
+      "modified": 1737331200000,
+      "created": 1737331200000,
+      "url": "{{ _.base_url }}/api/grupos/:id",
+      "name": "Eliminar Grupo",
+      "description": "Eliminar un grupo",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [
+        {
+          "id": "pair_id",
+          "name": "id",
+          "value": "1",
+          "description": "ID del grupo a eliminar"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Accept",
+          "value": "application/json",
+          "id": "pair_accept"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1737331196000,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global"
+    },
+    {
+      "_id": "fld_grupos",
+      "parentId": "wrk_grupos_api",
+      "modified": 1737331200000,
+      "created": 1737331200000,
+      "name": "Grupos",
+      "description": "Endpoints para gestionar grupos",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1737331200000
+    },
+    {
+      "_id": "wrk_grupos_api",
+      "parentId": null,
+      "modified": 1737331200000,
+      "created": 1737331200000,
+      "name": "Grupos API",
+      "description": "API REST para gestión de grupos",
+      "scope": "collection"
+    },
+    {
+      "_id": "env_base",
+      "parentId": "wrk_grupos_api",
+      "modified": 1737331200000,
+      "created": 1737331200000,
+      "name": "Base Environment",
+      "data": {
+        "base_url": "http://grupos-2.test"
+      },
+      "dataPropertyOrder": {
+        "&": ["base_url"]
+      },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1737331200000
+    },
+    {
+      "_id": "env_prod",
+      "parentId": "wrk_grupos_api",
+      "modified": 1737331200000,
+      "created": 1737331200000,
+      "name": "Production",
+      "data": {
+        "base_url": "https://api.tudominio.com"
+      },
+      "dataPropertyOrder": {
+        "&": ["base_url"]
+      },
+      "color": "#7d69cb",
+      "isPrivate": false,
+      "metaSortKey": 1737331200001
+    }
+  ]
+}
+

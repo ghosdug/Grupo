@@ -142,7 +142,7 @@ class GruposController extends Controller
         $grupo->update([
             'periodo' => $request->periodo,
             'materia' => $request->materia,
-            'rfc' => strtoupper($request->rfc), // Convertir RFC a mayúsculas
+            'rfc' => strtoupper($request->rfc), 
             'alumno_escritos' => $request->alumno_escritos,
             'grupo' => $request->grupo,
             'estatus_grupo' => $request->estatus_grupo,

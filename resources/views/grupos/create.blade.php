@@ -11,7 +11,6 @@
                     <h4 class="mb-0">Nuevo Grupo</h4>
                 </div>
                 <div class="card-body">
-                    
                     <!-- Mostrar errores de validación -->
                     @if($errors->any())
                         <div class="alert alert-danger">
